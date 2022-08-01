@@ -1,0 +1,212 @@
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+*,
+*::after,
+::before {
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+}
+
+html {
+font-size: 50.5%;
+}
+
+body {
+font-family: "DM Sans", sans-serif;
+font-size: 2.4rem;
+line-height: 1.9;
+background: #fff;
+}
+
+ul {
+list-style: none;
+}
+
+h1,
+h2,
+h3 {
+color: var(--font-color);
+margin-bottom: 1rem;
+line-height: 1.1;
+}
+
+h1 {
+font-size: 7rem;
+}
+
+h2 {
+font-size: 4rem;
+}
+
+h3 {
+font-size: 3rem;
+font-weight: 500;
+}
+
+p {
+margin-top: 0;
+}
+
+h1 {
+font-size: 8rem;
+}
+
+h2 {
+font-size: 4rem;
+}
+
+h3 {
+font-size: 2.4rem;
+}
+
+a {
+text-decoration: none;
+}
+
+
+
+/* contact page */
+#overlay {
+background-image: url(img/mark-farias-V_MdomV6Kbg-unsplash.jpg);
+background-size: cover;
+background-position: top center;
+position: absolute;
+z-index: 1;
+color: #000;
+margin-bottom: 100px;
+height: 100vh;
+background-repeat: no-repeat;
+width: 100%;
+/* height: auto; */
+/* position: fixed; */
+background-color: rgb(255, 0, 106, 0.4);
+}
+
+#overlay::after {
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: 0.7;
+z-index: -1;
+}
+
+.form {
+max-width: 550px;
+width: 70%;
+background: #fff;
+margin: 17vh auto 0 auto;
+padding: 10px 40px;
+border-radius: 3px;
+height: 60%;
+margin-bottom: 3rem;
+
+box-sizing: border-box;box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.69);
+-webkit-box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.69);
+-moz-box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.69);
+}
+
+form h2 {
+margin: 0;
+text-align: center;
+}
+
+label {
+display: block;
+margin: 10px 0;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+outline: none;
+resize: none;
+border: none;
+border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+border-bottom: 1px solid rgb(255, 0, 106);
+}
+
+.center {
+text-align: center;
+}
+
+input[type="submit"] {
+margin-top: 30px;
+width: 90%;
+max-width: 200px;
+cursor: pointer;
+background-color: rgb(182, 32, 32);
+border: 0;
+color: #fff;
+border-radius: 3px;
+}
+
+img {
+width: 4rem;
+height: 4rem;
+object-fit: contain;
+}
+
+.img-container {
+display: none;
+}
+
+.phone-container {
+display: flex;
+align-items: center;
+font-size: 1.9rem;
+}
+.center{
+display: flex;
+gap: 10px;
+justify-content: center;
+padding: 5px;
+}
+.submit, .reset{
+width: 120px;
+padding: 8px;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1.6rem;
+
+}
+/* . */
+.submit{
+background-color: #03a503;
+}
+.reset{
+background: red;
+}
+.submit:hover, .reset:hover{
+color: white;
+transition: 0.4s;
+}
+.submit:hover{
+background: #046c04;
+}
+.reset:hover{
+background: #990a0a;
+}
+.error-text{
+  color: red;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  text-align: left;
+  display: none;
+}
